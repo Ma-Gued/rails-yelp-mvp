@@ -1,0 +1,11 @@
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.text_field :content %><br>
+  <%= f.radio_button :rating, 1 %> <%= f.label :rating_3, "1" %>
+  <%= f.radio_button :rating, 2 %> <%= f.label :rating_3, "2" %>
+  <%= f.radio_button :rating, 3 %> <%= f.label :rating_3, "3" %>
+  <%= f.radio_button :rating, 4 %> <%= f.label :rating_3, "4" %>
+  <%= f.radio_button :rating, 5 %> <%= f.label :rating_3, "5" %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Back to list", restaurants_path %>
